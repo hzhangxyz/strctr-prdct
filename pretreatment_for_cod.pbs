@@ -1,0 +1,9 @@
+#PBS -N pretreat_cod
+#PBS -l nodes=1:ppn=20
+#PBS -q ib
+#PBS -o output
+#PBS -e error
+
+cd $PBS_O_WORKDIR
+
+python ./pretreatment_for_cod.py /home/hzhang/cod/cif/ ../data
